@@ -67,7 +67,7 @@ export default class FormSection extends React.Component {
                 	<div className={classNames('container', {'container--medium': is_vert})}>
                 		<div className={classNames('section__content', 'grid', {'items-center': is_horiz && (align_y === 'middle'), 'items-end': is_horiz && (align_y === 'bottom')})}>
                 			{has_text && (
-                			<div className={classNames('section__copy', 'my-2', 'cell-12', {'cell-md-7': is_horiz && (form_width === 'fourty'), 'cell-md-6': is_horiz && (form_width === 'fifty'), 'cell-md-5': is_horiz && (form_width === 'sixty'), 'text-center': content_align_x === 'center', 'text-right': content_align_x === 'right'})}>
+                			<div id="contact" className={classNames('section__copy', 'my-2', 'cell-12', {'cell-md-7': is_horiz && (form_width === 'fourty'), 'cell-md-6': is_horiz && (form_width === 'fifty'), 'cell-md-5': is_horiz && (form_width === 'sixty'), 'text-center': content_align_x === 'center', 'text-right': content_align_x === 'right'})}>
                 				{markdownify(_.get(section, 'content', null))}
                 			</div>
                 			)}
